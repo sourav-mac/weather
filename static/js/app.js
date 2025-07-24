@@ -124,7 +124,7 @@ export const updateWeather = (lat,lon)=>{
             <h2 class="title-2 card-title">Now</h2>
             <div class="wrapper">
                 <p class="heading">${parseInt(temp)}&deg;<sup>c</sup></p>
-                <img src="/static/images/${icon}.png" width="64" height="64" alt="${description}" class="weather-icon">
+                <img src="./static/images/${icon}.png" width="64" height="64" alt="${description}" class="weather-icon">
             </div>
             <p class="body-3">${description}</p>
             <ul class="meta-list">
@@ -266,7 +266,7 @@ export const updateWeather = (lat,lon)=>{
                 tempLi.innerHTML=`
                     <div class="card card-sm slider-card">
                         <p class="body-3">${module.getTime(dateTimeUnix,timezone)}</p>
-                        <img src="/static/images/${icon}.png" width="48" height="48" loading="lazy" alt="${description}" class="weather-icon" title="${description}">
+                        <img src="./static/images/${icon}.png" width="48" height="48" loading="lazy" alt="${description}" class="weather-icon" title="${description}">
                         <p class="body-3">${temp}&deg;</p>
                     </div>
                     `;
@@ -276,7 +276,7 @@ export const updateWeather = (lat,lon)=>{
                 windLi.innerHTML=`
                     <div class="card card-sm slider-card">
                         <p class="body-3">${module.getTime(dateTimeUnix,timezone)}</p>
-                        <img src="/static/images/direction.png" width="48" height="48" loading="lazy" alt="" class="weather-icon" style="transform :rotate(${windDirection - 180}deg)">
+                        <img src="./static/images/direction.png" width="48" height="48" loading="lazy" alt="" class="weather-icon" style="transform :rotate(${windDirection - 180}deg)">
                         <p class="body-3">${parseInt(module.mps_to_kmh(windSpeed)) }Km/h</p>
                     </div>
                 `;
@@ -303,7 +303,7 @@ export const updateWeather = (lat,lon)=>{
                 li.classList.add("card-item");
                 li.innerHTML=`
                     <div class="icon-wrapper">
-                        <img src="/static/images/${icon}.png" width="36" height="36" alt="${description}" class="weather-icon">
+                        <img src="./static/images/${icon}.png" width="36" height="36" alt="${description}" class="weather-icon">
                         <span class="span">
                         <p class="title-2">${parseInt(temp_max)}&deg;</p>
                         </span>
