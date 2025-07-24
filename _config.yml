@@ -1,0 +1,17 @@
+# GitHub Pages configuration for Weather App
+title: Weather App
+description: Explore accurate and real-time weather information for cities around the world
+baseurl: "/weather"
+url: "https://sourav-mac.github.io"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+  - node_modules/
+  - package*.json
+
+# Include all static assets
+include:
+  - static/
+  - .nojekyll
